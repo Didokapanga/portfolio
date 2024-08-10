@@ -1,0 +1,131 @@
+.header {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    background: #fff;
+    color: #333;
+    margin: 2em 0 2em 0;
+    padding: 0 30px 0 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-radius: 15px;
+    border: 1px solid #c4c5c5;
+}
+
+.logo-img {
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    flex: 4;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-center {
+    list-style: none;
+    width: 75%;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar {
+    color: #333;
+    padding: 0 0 0 15px;
+}
+
+.button {
+    width: 15em;
+    height: 3.5em;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    background: #00A6FF;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-icon {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button:hover {}
+
+.burger-menu {
+    display: none;
+    font-size: 40px;
+    align-items: center;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width:1200px) {
+    .logo-img {
+        flex: 1;
+    }
+
+    .logo {
+        width: 70%;
+        height: 70%;
+    }
+
+    .navigation {
+        flex: 5;
+    }
+
+    .navigation ul {
+        gap: 20px;
+    }
+
+    .button {
+        width: 12em;
+    }
+}
+
+@media (max-width:1000px) {
+    .navigation {
+        display: none;
+    }
+
+    .logo-img {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        width: 25%;
+        height: 25%;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+}
