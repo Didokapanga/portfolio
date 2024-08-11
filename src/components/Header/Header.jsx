@@ -21,7 +21,7 @@ const Header = () => {
     return (
         <div className='header'>
             <div className="logo-img">
-                <img src={Logo} alt="Dido Développeur Freelance" className='logo' />
+                <a href="/"><img src={Logo} alt="Dido Développeur Freelance" className='logo' /></a>
             </div>
             <div className="navigation">
                 <ul className='menu-center'>
@@ -63,10 +63,10 @@ const Header = () => {
                 <div className="sidebar-content">
                     <AiOutlineClose className="close-icon" onClick={toggleSidebar} />
                     <ul>
-                        <li><a href="#experience">Expérience</a></li>
-                        <li><a href="#projets">Projets</a></li>
-                        <li><a href="#apropos">A propos</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li onClick={toggleSidebar}><a href="#experience">Expérience</a></li>
+                        <li onClick={toggleSidebar}><a href="#projets">Projets</a></li>
+                        <li onClick={toggleSidebar}><a href="#apropos">A propos</a></li>
+                        <li onClick={toggleSidebar}><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
