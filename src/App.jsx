@@ -6,6 +6,10 @@ function App() {
     <>
       <div className='app'>
         <Header />
+        <div className="content">
+          {/* Le reste de ton site */}
+          Bienvenue
+        </div>
       </div>
     </>
   )
