@@ -1,7 +1,7 @@
 .header {
     display: flex;
     align-items: center;
-    width: 65%;
+    width: 67%;
     background-color: rgba(255, 255, 255, 0.5);
     color: #333;
     margin: 2em 0 2em 0;
@@ -210,6 +210,15 @@
 
 .sidebar ul li a:hover {
     color: #00A6FF;
+}
+
+.close-icon {
+    font-size: 40px;
+    transition: 3s;
+}
+
+.close-icon:hover {
+    transform: scale(1.1);
 }
 
 /* Style pour le burger menu */
