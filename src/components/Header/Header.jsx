@@ -8,16 +8,18 @@ const Header = () => {
     return (
         <div className='header'>
             <div className="logo-img">
-                <img src={Logo} alt="" className='logo' />
+                <img src={Logo} alt="Dido Développeur Freelance" className='logo' />
             </div>
             <div className="navigation">
                 <ul className='menu-center'>
                     <li><a href="#about">Expérience</a></li>
-                    <li><a href="#services">Stratégie</a></li>
-                    <li><a href="#portfolio">Outils</a></li>
-                    <li><a href="#temoignages">Projets</a></li>
+                    <li><a href="#services">Projets</a></li>
+                    <li><a href="#portfolio">Services</a></li>
+                    {/* <li><a href="#temoignages"></a></li> */}
                     <li><a href="#blog">A propos</a></li>
                 </ul>
+            </div>
+            <div className="navigation-btn">
                 <a href="#contact">
                     <button className="button">
                         <span className='btn-icon'>
