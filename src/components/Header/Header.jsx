@@ -7,7 +7,7 @@ import { FaBarsStaggered } from 'react-icons/fa6'
 const Header = () => {
 
     const [sidebarOpen, setSidebarOpen] = useState(false);
-
+    const [openSubMenu, setOpenSubMenu] = useState(null);
     // const toggleSidebar = () => {
     //     setSidebarOpen(!sidebarOpen);
     //     document.body.classList.toggle('sidebar-open');
@@ -17,6 +17,9 @@ const Header = () => {
         setSidebarOpen(!sidebarOpen);
     };
 
+    const toggleSubMenu = (menu) => {
+        setOpenSubMenu(openSubMenu === menu ? null : menu);
+    };
 
     return (
         <div className='header'>
@@ -58,7 +61,7 @@ const Header = () => {
             <div className="burger-menu" onClick={toggleSidebar}>
                 <FaBarsStaggered />
             </div>
-            <div className={`overlay ${sidebarOpen ? 'open' : ''}`} onClick={toggleSidebar}></div>
+            <div className={`overlay ${sidebarOpen ? 'open' : ''}`} /*onClick={toggleSidebar}*/></div>
             <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
                 <div className="sidebar-content">
                     <AiOutlineClose className="close-icon" onClick={toggleSidebar} />
@@ -69,20 +72,52 @@ const Header = () => {
                         <li onClick={toggleSidebar}><a href="#contact">Contact</a></li>
                     </ul> */}
                     <ul>
-                        <li className='submenu' onClick={toggleSidebar}>
-                            <a href="#experience">Expérience</a>
-                            <AiOutlineDown className="submenu-icon" />
+                        {/* <li>
+                            <div onClick={() => toggleSubMenu('experience')}>
+                                <AiOutlineDown className="submenu-icon" />
+                                <a href="#experience">Expérience</a>
+                            </div>
+                            {openSubMenu === 'experience' && (
+                                <div className="submenu-content">
+                                    <p>Détails de l'expérience...</p>
+                                </div>
+                            )}
+                        </li> */}
+                        <li >
+                            <div className='submenu'>
+                                <a href="#experience" onClick={toggleSidebar}>Expérience</a>
+                                <AiOutlineDown className="submenu-icon" onClick={() => toggleSubMenu('experience')} />
+                            </div>
+                            {openSubMenu === 'experience' && (
+                                <div className="submenu-content">
+                                    <p>Détails de l'expérience...</p>
+                                </div>
+                            )}
                         </li>
-                        <li className='submenu' onClick={toggleSidebar}>
-                            <a href="#projets">Projets</a>
-                            <AiOutlineDown className="submenu-icon" />
+                        <li>
+                            <div className='submenu'>
+                                <a href="#projets" onClick={toggleSidebar}>Projets</a>
+                                <AiOutlineDown className="submenu-icon" onClick={() => toggleSubMenu('projets')} />
+                            </div>
+                            {openSubMenu === 'projets' && (
+                                <div className="submenu-content">
+                                    <p>Détails des projets...</p>
+                                </div>
+                            )}
                         </li>
-                        <li className='submenu' onClick={toggleSidebar}>
-                            <a href="#apropos">À propos</a>
-                            <AiOutlineDown className="submenu-icon" />
+                        <li>
+                            <div className='submenu'>
+                                <a href="#apropos" onClick={toggleSidebar}>À propos</a>
+                                <AiOutlineDown className="submenu-icon" onClick={() => toggleSubMenu('apropos')} />
+                            </div>
+                            {openSubMenu === 'apropos' && (
+                                <div className="submenu-content">
+                                    <p>Détails à propos...</p>
+                                </div>
+                            )}
                         </li>
-                        <li className='submenu' onClick={toggleSidebar}>
-                            <a href="#contact">Contact</a>
+                        <li className='submenu'>
+                            <a href="#contact" onClick={toggleSidebar}>Contact</a>
                         </li>
                     </ul>
                 </div>
