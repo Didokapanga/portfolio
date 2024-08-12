@@ -3,6 +3,7 @@ import './Header.css'
 import { Logo } from '../../assets/assets'
 import { AiOutlineClose, AiOutlineDown, AiOutlineRight } from 'react-icons/ai'
 import { FaBarsStaggered } from 'react-icons/fa6'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
 
@@ -21,24 +22,24 @@ const Header = () => {
     return (
         <div className='header'>
             <div className="logo-img">
-                <a href="/"><img src={Logo} alt="Dido Développeur Freelance" className='logo' /></a>
+                <Link to="/"><img src={Logo} alt="Dido Développeur Freelance" className='logo' /></Link>
             </div>
             <div className="navigation">
                 <ul className='menu-center'>
                     <li className="dropdown">
-                        <a href="#experience">Expérience</a>
+                        <Link to="/experiences">Expérience</Link>
                         <div className="dropdown-content">
                             <p>Plus de détails sur l'expérience professionnelle.</p>
                         </div>
                     </li>
                     <li className="dropdown">
-                        <a href="#projets">Projets</a>
+                        <Link to="/projects">Projets</Link>
                         <div className="dropdown-content">
                             <p>Découvrir les projets réalisés.</p>
                         </div>
                     </li>
                     <li className="dropdown">
-                        <a href="#apropos">A propos</a>
+                        <Link to="/about">A propos</Link>
                         <div className="dropdown-content">
                             <p>En savoir plus sur moi.</p>
                         </div>
@@ -46,14 +47,14 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navigation-btn">
-                <a href="#contact">
+                <Link to="/contact">
                     <button className="button">
                         <span className='btn-icon'>
                             Prenez contact
                             <AiOutlineRight />
                         </span>
                     </button>
-                </a>
+                </Link>
             </div>
             <div className="burger-menu" onClick={toggleSidebar}>
                 <FaBarsStaggered />
