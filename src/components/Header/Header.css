@@ -236,6 +236,20 @@ body.sidebar-open .app {
     transition: transform 0.3s ease;
 }
 
+.submenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Style des icônes de sous-menu */
+.submenu-icon {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
 /* MEDIA QUERY */
 
 @media (max-width:1200px) {

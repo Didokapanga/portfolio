@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Header.css'
 import { Logo } from '../../assets/assets'
-import { AiOutlineClose, AiOutlineRight } from 'react-icons/ai'
+import { AiOutlineClose, AiOutlineDown, AiOutlineRight } from 'react-icons/ai'
 import { FaBarsStaggered } from 'react-icons/fa6'
 
 const Header = () => {
@@ -62,11 +62,28 @@ const Header = () => {
             <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
                 <div className="sidebar-content">
                     <AiOutlineClose className="close-icon" onClick={toggleSidebar} />
-                    <ul>
+                    {/* <ul>
                         <li onClick={toggleSidebar}><a href="#experience">Expérience</a></li>
                         <li onClick={toggleSidebar}><a href="#projets">Projets</a></li>
                         <li onClick={toggleSidebar}><a href="#apropos">A propos</a></li>
                         <li onClick={toggleSidebar}><a href="#contact">Contact</a></li>
+                    </ul> */}
+                    <ul>
+                        <li className='submenu' onClick={toggleSidebar}>
+                            <a href="#experience">Expérience</a>
+                            <AiOutlineDown className="submenu-icon" />
+                        </li>
+                        <li className='submenu' onClick={toggleSidebar}>
+                            <a href="#projets">Projets</a>
+                            <AiOutlineDown className="submenu-icon" />
+                        </li>
+                        <li className='submenu' onClick={toggleSidebar}>
+                            <a href="#apropos">À propos</a>
+                            <AiOutlineDown className="submenu-icon" />
+                        </li>
+                        <li className='submenu' onClick={toggleSidebar}>
+                            <a href="#contact">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
