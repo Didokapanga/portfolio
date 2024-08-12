@@ -250,6 +250,16 @@ body.sidebar-open .app {
     transition: transform 0.3s ease;
 }
 
+/* Style des sous-menus */
+.submenu-content {
+    padding: 10px 15px;
+    background-color: #444;
+    border-radius: 8px;
+    color: white;
+    margin-top: 10px;
+    transition: max-height 0.3s ease-in-out;
+}
+
 /* MEDIA QUERY */
 
 @media (max-width:1200px) {

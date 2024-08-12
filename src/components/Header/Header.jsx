@@ -8,13 +8,10 @@ const Header = () => {
 
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [openSubMenu, setOpenSubMenu] = useState(null);
-    // const toggleSidebar = () => {
-    //     setSidebarOpen(!sidebarOpen);
-    //     document.body.classList.toggle('sidebar-open');
-    // };
 
     const toggleSidebar = () => {
         setSidebarOpen(!sidebarOpen);
+        toggleSubMenu()
     };
 
     const toggleSubMenu = (menu) => {
@@ -61,28 +58,11 @@ const Header = () => {
             <div className="burger-menu" onClick={toggleSidebar}>
                 <FaBarsStaggered />
             </div>
-            <div className={`overlay ${sidebarOpen ? 'open' : ''}`} /*onClick={toggleSidebar}*/></div>
+            <div className={`overlay ${sidebarOpen ? 'open' : ''}`} onClick={toggleSidebar}></div>
             <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
                 <div className="sidebar-content">
                     <AiOutlineClose className="close-icon" onClick={toggleSidebar} />
-                    {/* <ul>
-                        <li onClick={toggleSidebar}><a href="#experience">Expérience</a></li>
-                        <li onClick={toggleSidebar}><a href="#projets">Projets</a></li>
-                        <li onClick={toggleSidebar}><a href="#apropos">A propos</a></li>
-                        <li onClick={toggleSidebar}><a href="#contact">Contact</a></li>
-                    </ul> */}
                     <ul>
-                        {/* <li>
-                            <div onClick={() => toggleSubMenu('experience')}>
-                                <AiOutlineDown className="submenu-icon" />
-                                <a href="#experience">Expérience</a>
-                            </div>
-                            {openSubMenu === 'experience' && (
-                                <div className="submenu-content">
-                                    <p>Détails de l'expérience...</p>
-                                </div>
-                            )}
-                        </li> */}
                         <li >
                             <div className='submenu'>
                                 <a href="#experience" onClick={toggleSidebar}>Expérience</a>
