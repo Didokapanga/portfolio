@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import { Helmet } from 'react-helmet-async'
 import Hero from '../../components/Hero/Hero'
+import Outils from '../../components/Outils/Outils'
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
                 <meta name="Accueil" content="Contenu de la page principale" />
             </Helmet> */}
             <Hero />
+            <Outils />
         </div>
     )
 }

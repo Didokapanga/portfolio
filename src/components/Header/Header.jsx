@@ -4,6 +4,7 @@ import { Logo } from '../../assets/assets'
 import { AiOutlineClose, AiOutlineDown, AiOutlineRight } from 'react-icons/ai'
 import { FaBarsStaggered } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
+import { HiMenu } from 'react-icons/hi'
 
 const Header = () => {
 
@@ -65,7 +66,8 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className="burger-menu" onClick={toggleSidebar}>
-                    <FaBarsStaggered />
+                    {/* <FaBarsStaggered /> */}
+                    <HiMenu />
                 </div>
                 <div className={`overlay ${sidebarOpen ? 'open' : ''}`} onClick={toggleSidebar}></div>
                 <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>

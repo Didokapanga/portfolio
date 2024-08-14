@@ -7,8 +7,9 @@ const Hero = () => {
     return (
         <div className='hero'>
             <div className='hero-title'>
+                <p className='hero-info'>Développeur <span>React Frontend</span></p>
                 <h1>Construisons ensemble votre prochain projet web.</h1>
-                <p>Le code, c'est ma passion. Et JavaScript, c'est mon langage de prédilection pour exprimer ma créativité sur le web.</p>
+                <p>Le code, c'est ma passion. Et React, c'est mon langage de prédilection pour exprimer ma créativité sur le web.</p>
                 <div className="hero-btn">
                     <button className="buttons"><span>Curruculum vitae <HiOutlineDownload className='hero-btn-icon' /></span></button>
                     <button className="button-hero"><span>Contactez-moi <HiPhone className='hero-btn-icon' /></span></button>
