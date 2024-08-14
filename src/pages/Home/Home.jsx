@@ -11,6 +11,9 @@ const Home = () => {
                 <meta name="Accueil" content="Contenu de la page principale" />
             </Helmet> */}
             <Hero />
+            <Hero />
+            <Hero />
+            <Hero />
         </div>
     )
 }

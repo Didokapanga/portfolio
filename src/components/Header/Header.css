@@ -1,19 +1,30 @@
 .header {
-    display: flex;
-    align-items: center;
-    width: 67%;
-    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
     color: #333;
-    margin: 2em 0 2em 0;
-    padding: 2px 30px 2px 30px;
+    padding: 0.3em;
     overflow: visible;
     /* Important: ne pas masquer le dropdown */
-    text-align: left;
-    border-radius: 15px;
-    border: 1px solid #c4c5c5;
-    position: relative;
-    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
 }
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 70%;
+
+}
+
+.steacky-menu {
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: 0.5s;
+}
+
 
 .logo-img {
     width: 100%;
@@ -21,7 +32,10 @@
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    position: relative;
+    right: 1em;
+    background-color: transparent;
 }
 
 .logo {
@@ -39,6 +53,7 @@
     justify-content: center;
     position: relative;
     z-index: 2;
+    background-color: transparent;
 }
 
 /* Style pour les éléments de navigation */
@@ -46,6 +61,7 @@
     display: flex;
     gap: 40px;
     justify-content: center;
+    background-color: transparent;
 }
 
 /* Style spécifique pour les liens */
@@ -55,6 +71,7 @@
     color: #333;
     position: relative;
     padding-right: 15px;
+    /* background-color: transparent; */
 }
 
 .navigation a:hover {
@@ -263,9 +280,13 @@ body.sidebar-open .app {
 /* MEDIA QUERY */
 
 @media (max-width:1200px) {
-    .header {
+
+    /* .header {
         width: 80%;
         padding: 15px 20px 15px 20px;
+    } */
+    .header-content {
+        width: 85%;
     }
 
     .logo-img {
