@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --primary: #833471;
+    --secondary: #FDA7DF;
+    --blue: #0984e3;
+    --black: #333;
+    --gray: #696969;
+    --border: #c4c5c5;
+    --orange: #fdcb6e;
+    --primary-gradient: linear-gradient(270deg, #fda7df 0%, #833471 100%);
+    --orange-gradient: linear-gradient(270deg, #0984e3 0%, #fdcb6e 100%);
+    --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
+}
+
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    /* #fdcb6e */
 }
 
 .buttons {

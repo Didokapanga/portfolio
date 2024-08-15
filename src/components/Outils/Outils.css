@@ -1,0 +1,11 @@
+.outils {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 50px; */
+}
+
+.outils img {
+    width: 10%;
+    height: 10%;
+}
