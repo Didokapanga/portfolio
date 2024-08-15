@@ -336,6 +336,10 @@ body.sidebar-open .app {
 }
 
 @media (max-width:600px) {
+    .header-content {
+        width: 95%;
+    }
+
     .logo {
         width: 50%;
         height: 50%;

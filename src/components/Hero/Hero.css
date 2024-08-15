@@ -140,6 +140,14 @@
         margin-bottom: 0;
     }
 
+    .hero-title {
+        justify-content: flex-start;
+    }
+
+    .hero-title h1 {
+        font-size: 170px;
+    }
+
     .hero-title h1 {
         font-size: 28px;
     }
