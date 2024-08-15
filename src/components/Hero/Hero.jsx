@@ -5,7 +5,7 @@ import { HiOutlineDownload, HiPhone } from 'react-icons/hi'
 
 const Hero = () => {
     return (
-        <div className='hero'>
+        <div className="hero">
             <div className="hero-content">
                 <div className='hero-title'>
                     <p className='hero-info'>Développeur <span>React Frontend</span></p>

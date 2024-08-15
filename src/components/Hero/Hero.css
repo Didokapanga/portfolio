@@ -3,6 +3,7 @@
     justify-content: center;
     margin-top: 9em;
     align-items: center;
+    width: 100%;
 }
 
 .hero-content {
@@ -128,9 +129,10 @@
 }
 
 @media (max-width:590px) {
-    .hero-content {
-        width: 70%;
+    .hero .hero-content {
+        width: 90%;
         padding: 0;
+
     }
 
     .hero-btn {
