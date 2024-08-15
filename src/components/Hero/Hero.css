@@ -129,7 +129,11 @@
 }
 
 @media (max-width:590px) {
-    .hero .hero-content {
+    .hero {
+        margin-top: 5em;
+    }
+
+    .hero-content {
         width: 90%;
         padding: 0;
 
