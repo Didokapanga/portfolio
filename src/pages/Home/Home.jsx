@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async'
 import Hero from '../../components/Hero/Hero'
 import Outils from '../../components/Outils/Outils'
 import Presentation from '../../components/Presentation/Presentation'
+import Services from '../../components/Services/Services'
 
 const Home = () => {
     return (
@@ -13,6 +14,9 @@ const Home = () => {
             </div>
             <div className='home-presentation'>
                 <Presentation />
+            </div>
+            <div className="home">
+                <Services />
             </div>
         </>
     )

@@ -104,3 +104,60 @@
     position: relative;
     z-index: 1;
 }
+
+.buttons-hero {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    border: 2px solid #0984e3;
+    background-color: #0984e3;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    outline: none;
+}
+
+.buttons-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: all 0.4s ease-in-out;
+    z-index: 0;
+}
+
+.buttons-hero:hover::before {
+    right: 0;
+}
+
+.buttons-hero:hover {
+    color: #0984e3;
+    /* Optionally, you can change text color */
+}
+
+.buttons-hero span {
+    position: relative;
+    z-index: 1;
+    color: #333;
+}
+
+.primary-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #696969;
+    margin-top: 20px;
+}
+
+.secondary-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 20px;
+}
