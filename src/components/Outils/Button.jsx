@@ -47,8 +47,10 @@ const Button = () => {
                 <div className="overlay-content">
                     <div className="button-content">
                         <h4>Me contacter</h4>
-                        <button className="buttons"><span>appelez-moi</span> <span>0826569932</span></button>
-                        <button className="buttons-chat-info"><span>Ecrivez-moi</span></button>
+                        <div className="customer-container">
+                            <button className="buttons"><span>appelez-moi</span> <span>0826569932</span></button>
+                            <button className="buttons-chat-info"><span>Ecrivez-moi</span></button>
+                        </div>
                     </div>
                 </div>
             </div>
