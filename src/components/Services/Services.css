@@ -45,7 +45,7 @@
     font-size: 35px;
 }
 
-.services-title span {
+.services-title .title-customer {
     color: var(--primary);
 }
 

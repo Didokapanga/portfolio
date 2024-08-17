@@ -9,7 +9,7 @@ const Services = () => {
         <div className='services'>
             <div className="over-gradiant">
                 <div className="services-title">
-                    <h2>Mes <span>expertises</span></h2>
+                    <h2>Mes <span className='title-customer'>expertises</span></h2>
                     <p className='secondary-text'>Explorez mes services professionnels de développement web et mobile, où chaque projet est conçu sur mesure pour offrir des solutions innovantes, performantes et adaptées à vos besoins spécifiques. </p>
                     <button className="buttons-hero"><span>Voir plus</span></button>
                 </div>
