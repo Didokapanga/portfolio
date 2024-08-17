@@ -6,6 +6,7 @@ import Experiences from './pages/Experiences/Experiences';
 import Projects from './pages/Projects/Projects';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
+import Button from './components/Outils/Button';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Header />
           <div className="content">
             {/* Le reste de ton site */}
+            <Button />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/experiences" element={<Experiences />} />

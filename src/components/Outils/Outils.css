@@ -2,10 +2,46 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* gap: 50px; */
 }
 
 .outils img {
     width: 10%;
     height: 10%;
+}
+
+.button-outils {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    z-index: 1;
+    right: 3%;
+    top: 80%;
+}
+
+.button-outils button {
+    color: #fff;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: none;
+    background-color: var(--blue);
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 25px;
+    outline: none;
+}
+
+.button-up {
+    display: none;
+}
+
+.button-outils .button-up:hover {
+    transform: scale(1.01);
+}
+
+.button-outils .button-chat:hover {
+    transform: rotate(180deg);
 }
