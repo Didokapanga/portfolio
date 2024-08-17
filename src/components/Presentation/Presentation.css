@@ -6,6 +6,7 @@
     width: 85%;
     height: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideInFromRight 1s ease-out;
 }
 
 .presentation-item {
