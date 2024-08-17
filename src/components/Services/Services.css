@@ -136,14 +136,15 @@ p {
         gap: 0;
     }
 
-    @media (max-width:570px) {
-        .services-title {
-            grid-template-columns: 1fr;
-        }
+}
 
-        .services-item {
-            display: flex;
-            flex-direction: column;
-        }
+@media (max-width:570px) {
+    .services-title {
+        grid-template-columns: 1fr;
+    }
+
+    .services-item {
+        display: flex;
+        flex-direction: column;
     }
 }
