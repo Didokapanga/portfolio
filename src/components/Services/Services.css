@@ -69,6 +69,15 @@
     color: #000;
 }
 
+.service-card h4 {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.service-card h4:hover {
+    transform: scale(1.03);
+}
+
 .service-card h4,
 p {
     margin-bottom: 15px;
@@ -76,7 +85,7 @@ p {
 
 .service-icon {
     font-size: 2rem;
-    color: var(--blue);
+    color: var(--primary);
     background-color: #fff;
     width: 40px;
     height: 40px;
@@ -85,6 +94,12 @@ p {
     justify-content: center;
     border-radius: 100%;
     margin-bottom: 15px;
+    cursor: pointer;
+}
+
+
+.service-icon:hover {
+    transform: scale(1.03);
 }
 
 /* Media query pour les petites tailles d'écran */
