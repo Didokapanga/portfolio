@@ -112,12 +112,38 @@ p {
 
 @media (max-width:899px) {
     .services-item {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .service-card {
+        padding: 4px 10px;
+        margin: 0;
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
     .services-title {
         flex-direction: column;
+    }
+
+    .over-gradiant {
+        padding: 10px;
+    }
+
+    .services-item {
+        padding: 0;
+        margin: 0;
+        gap: 0;
+    }
+
+    @media (max-width:570px) {
+        .services-title {
+            grid-template-columns: 1fr;
+        }
+
+        .services-item {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
